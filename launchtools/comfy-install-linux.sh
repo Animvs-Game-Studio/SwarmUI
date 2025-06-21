@@ -72,4 +72,8 @@ fi
 echo "install general requirements..."
 $python -s -m pip install -r requirements.txt
 
+echo "install Animvs requirements..."
+$python -s -m pip install -r /AV-EXTRA/av-comfyui-extra-requirements.txt
+
 echo "Installation completed for $GPU_TYPE GPU."
+#venv/bin/python -m pip install custom_nodes/comfyui-hunyuan3dwrapper/wheels/custom_rasterizer-0.1-cp312-cp312-win_amd64.whl

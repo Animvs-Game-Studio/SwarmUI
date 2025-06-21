@@ -1,0 +1,24 @@
+#Additional requirements for 3D model generation using TODO
+
+#ANIMVS CHANGE: py3dgen dependencies:
+trimesh
+diffusers>=0.31.0
+accelerate
+huggingface_hub
+opencv-python
+xatlas
+pymeshlab
+pygltflib
+scikit-learn
+scikit-image
+pybind11
+transparent_background
+
+#for rendering the mesh
+git+https://github.com/EasternJournalist/utils3d.git#egg=utils3d
+nvdiffrast
+#for quad remeshing node
+pynanoinstantmeshes
+#for fast decimation node
+pyfqmr
+diso
