@@ -27,7 +27,6 @@ docker run -it \
     -v /mnt/AVHOM/AI/DockerData/AVSwarmUI/swarmdlnodes/:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/DLNodes/ \
     -v /mnt/AVHOM/AI/DockerData/AVSwarmUI/Output/:/SwarmUI/Output/ \
     -v /mnt/AVHOM/AI/DockerData/AVSwarmUI/BuiltinExtensions/CustomWorkflows/:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/CustomWorkflows/ \
-    -v /mnt/AVHOM/AI/DockerData/AVSwarmUI/swarmbackend/linuxhome/:/SwarmUI/dlbackend/linuxhome/ \
     --gpus=all -p 7801:7801 av-swarmui --forward_restart $@
 
 if [ $? == 42 ]; then

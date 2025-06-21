@@ -1,4 +1,4 @@
-name: av-swarmui
+name: av-swarmui-new
 
 services:
   swarmui:
@@ -18,13 +18,14 @@ services:
     volumes:
       - ../:/SwarmUI/
       - ./av-comfyui-extra-requirements.txt:/AV-EXTRA/av-comfyui-extra-requirements.txt
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/:/AV-DATA/
 
-      - /mnt/AVHOM/AI/Models/:/SwarmUI/Models/
-      - /mnt/AVHOM/AI/DockerData/AVSwarmUI/swarmdata/:/SwarmUI/Data/
-      - /mnt/AVHOM/AI/DockerData/AVSwarmUI/swarmbackend/:/SwarmUI/dlbackend/
-      - /mnt/AVHOM/AI/DockerData/AVSwarmUI/swarmdlnodes/:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/DLNodes/
-      - /mnt/AVHOM/AI/DockerData/AVSwarmUI/Output/:/SwarmUI/Output/
-      - /mnt/AVHOM/AI/DockerData/AVSwarmUI/BuiltinExtensions/CustomWorkflows/:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/CustomWorkflows/
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/Models/:/SwarmUI/Models/
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/swarmdata/:/SwarmUI/Data/
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/swarmbackend/:/SwarmUI/dlbackend/
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/swarmdlnodes/:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/DLNodes/
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/Output/:/SwarmUI/Output/
+      - /mnt/AVHOM/AI/SwarmUI_New/DockerData/AVSwarmUI/BuiltinExtensions/CustomWorkflows/:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/CustomWorkflows/
       # - ./src/BuiltinExtensions/ComfyUIBackend/CustomWorkflows:/SwarmUI/src/BuiltinExtensions/ComfyUIBackend/CustomWorkflows
     ports:
       - "7801:7801"
